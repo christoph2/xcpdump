@@ -31,7 +31,6 @@ Then run
 Usage
 -----
 
-..code-block:: shell
 
     Usage: xcpdump [options] <CAN interface>
     Options:
