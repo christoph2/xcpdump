@@ -693,7 +693,7 @@ static uint16_t print_requested_service(XcpMessage const * const msg)
         case ALLOC_ODT_ENTRY:
             printf("ALLOC_ODT_ENTRY(");
             printf("daqListNumber = %u", MSG_WORD(2));
-            printf(", odtNumber = %u", MSG_WORD(4));
+            printf(", odtNumber = %u", MSG_BYTE(4));
             printf(", odtEntriesCount = %u", MSG_BYTE(5));
             idx = 7;
             break;
