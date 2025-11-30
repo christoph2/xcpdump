@@ -128,13 +128,13 @@ int main(int argc, char **argv)
                 case 'm':
                         dst = strtoul(optarg, (char **)NULL, 16);
                         if (strlen(optarg) > 7)
-                                src |= CAN_EFF_FLAG;
+                                dst |= CAN_EFF_FLAG;
                         break;
 
                 case 's':
                         src = strtoul(optarg, (char **)NULL, 16);
                         if (strlen(optarg) > 7)
-                                dst |= CAN_EFF_FLAG;
+                                src |= CAN_EFF_FLAG;
                         break;
 
                 case 'd':
